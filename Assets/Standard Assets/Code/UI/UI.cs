@@ -17,7 +17,7 @@ public class UI : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
             Menu.SetActive(true);
             Player.GetComponent<FirstPersonController>().enabled = false;
