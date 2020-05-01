@@ -18,20 +18,17 @@ public class Lever : InteractiveObject
     {
         State = !State;
         turnLever();
-
-        
-
     }
 
     void turnLever()
     {
         if(State)
         {
-            PhisicalLever.rotation = new Quaternion(0.3f,0.7f,-0.3f,0.7f);
+            PhisicalLever.localRotation = new Quaternion(0.4f, 0, 0, 0.9f);
         }
         else
         {
-            PhisicalLever.localRotation = new Quaternion(-0.3826834f, 0, 0, 0.9238795f);
+            PhisicalLever.localRotation = new Quaternion(-0.4f, 0, 0, 0.9f);
         }
     }
 

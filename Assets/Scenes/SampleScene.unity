@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4502443, g: 0.4978786, b: 0.56249607, a: 1}
+  m_IndirectSpecularColor: {r: 0.45024478, g: 0.49787915, b: 0.5624968, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21353,11 +21353,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 315856959102212228, guid: 4878e69362f66ef41827dfd9be947f86,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 315856959102212248, guid: 4878e69362f66ef41827dfd9be947f86,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21468,26 +21463,6 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 731957429}
-    - target: {fileID: 315856959102212255, guid: 4878e69362f66ef41827dfd9be947f86,
-        type: 3}
-      propertyPath: InGame
-      value: 
-      objectReference: {fileID: 8471534686945031999}
-    - target: {fileID: 8390665375828888464, guid: 4878e69362f66ef41827dfd9be947f86,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8390665375828888464, guid: 4878e69362f66ef41827dfd9be947f86,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 5997059195062397868, guid: 4878e69362f66ef41827dfd9be947f86,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4878e69362f66ef41827dfd9be947f86, type: 3}
 --- !u!1001 &1479091945
@@ -22096,6 +22071,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f95ea3f4f5c3378459f5f4c7110f5805, type: 3}
+--- !u!114 &1511145300 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 911429342, guid: 4878e69362f66ef41827dfd9be947f86,
+    type: 3}
+  m_PrefabInstance: {fileID: 1475147583}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1519001521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30201,6 +30188,14 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 629199391, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 8471534686945031999}
+    - target: {fileID: 629199391, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: Tooltip
+      value: 
+      objectReference: {fileID: 1511145300}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!1001 &2066217081
