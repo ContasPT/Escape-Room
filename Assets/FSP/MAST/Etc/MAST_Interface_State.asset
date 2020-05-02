@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridExists: 0
   selectedDrawToolIndex: 0
-  selectedItemIndex: 7
+  selectedItemIndex: -1
   lastPrefabPath: D:/Github Repositories/Escape-Room/Assets/modular terreno verde/modular_terrain_collection/Prefabs
   prefabs:
   - {fileID: 1049400542540893953, guid: dd3111bef613f1545a28dca3eb92d9b4, type: 3}
