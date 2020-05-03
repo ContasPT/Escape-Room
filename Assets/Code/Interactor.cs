@@ -83,19 +83,19 @@ public class Interactor : MonoBehaviour
             {
                 TargetObject.GetComponent<InteractiveObject>().ExecuteInteractiveAction();
             }
-            //else if (LastRaycastedObject == RaycastObject.Pickupable)
-            //{
+            else if (LastRaycastedObject == RaycastObject.Pickupable)
+            {
 
-            //    InventoryManager.TheInventory.AddItem(
-            //        TargetObject.GetComponent<InventoryPickup>().AssociatedItem);
-            //    TargetObject.SetActive(false);
-            //}
-            //else if (LastRaycastedObject == RaycastObject.Document)
-            //{
-            //    if (UIManager.TheUI.AreAnyUIsActive()) return;
+                InventoryManager.TheInventory.AddItem(
+                    TargetObject.GetComponent<InventoryPickup>().AssociatedItem);
+                TargetObject.SetActive(false);
+            }
+            else if (LastRaycastedObject == RaycastObject.Document)
+            {
+                if (UIManager.TheUI.AreAnyUIsActive()) return;
 
-            //    DocumentManager.TheManager.OpenDocumentPanel(TargetObject.GetComponent<DocumentScript>());
-            //}
+                DocumentManager.TheManager.OpenDocumentPanel(TargetObject.GetComponent<DocumentScript>());
+            }
         }
 
         // Physical Object Manipulation
