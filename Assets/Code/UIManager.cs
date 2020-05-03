@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour
 
     public bool AreAnyUIsActive() // <3
     {
-        //if (DocumentManager.TheManager.DocPanel.activeInHierarchy) return true;
+        if (DocumentManager.TheManager.DocPanel.activeInHierarchy) return true;
         if (InventoryManager.TheInventory.InventoryPanel.activeInHierarchy) return true;
         
         return false;
