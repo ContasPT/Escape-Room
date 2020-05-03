@@ -720,8 +720,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DocSprite: {fileID: 21300000, guid: 5ef07c8fa05ebc54f8fadd10200b62f1, type: 3}
-  DocName: Ola
-  DocText: "O meu nome \xE9 Mario"
 --- !u!54 &635563887
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2359,6 +2357,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154642311408340609, guid: 4878e69362f66ef41827dfd9be947f86,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748425661338313147, guid: 4878e69362f66ef41827dfd9be947f86,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697084680906470160, guid: 4878e69362f66ef41827dfd9be947f86,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4878e69362f66ef41827dfd9be947f86, type: 3}
