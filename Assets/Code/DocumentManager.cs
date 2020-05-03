@@ -19,7 +19,7 @@ public class DocumentManager : MonoBehaviour
     void Update()
     {
 
-        if(Input.anyKeyDown && DocPanel.activeInHierarchy)
+        if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) && DocPanel.activeInHierarchy)
         {
             CloseDocumentPanel();
         }
@@ -35,6 +35,7 @@ public class DocumentManager : MonoBehaviour
 
     internal void OpenDocumentPanel(Sprite Img)
     {
+
         DocPanel.SetActive(true);
         DocOnScreen.sprite = Img;
 

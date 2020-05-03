@@ -36,13 +36,21 @@ public class UI : MonoBehaviour
         ButtonResume.SetActive(true);
 
         Menu.SetActive(false);
-        
 
-        Player.GetComponent<Animation>().Play("PlayerStart");
+        if (Player.GetComponent<Animation>())
+        {
+            Player.GetComponent<Animation>().Play("PlayerStart");
 
-        //Player.GetComponent<FirstPersonController>().enabled = true;
+          
 
-        StartCoroutine(PlayerControl());
+            StartCoroutine(PlayerControl());
+        }
+        else
+        {
+            InGame.SetActive(true);
+            Player.GetComponent<FirstPersonController>().enabled = true;
+        }
+
 
     }
 

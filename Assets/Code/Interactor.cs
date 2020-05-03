@@ -37,7 +37,7 @@ public class Interactor : MonoBehaviour
         Tooltip.text = "";
         LastRaycastedObject = RaycastObject.Nothing;
 
-        if (!PhysicalObject && UI.active)
+        if (!PhysicalObject && UI.activeSelf && !UIManager.TheUI.AreAnyUIsActive())
         {
             if (Physics.Raycast(RaycastOrigin.transform.position, transform.forward, out hit, InteractionLength))
             {
@@ -92,6 +92,7 @@ public class Interactor : MonoBehaviour
             }
             else if (LastRaycastedObject == RaycastObject.Document)
             {
+               
                 if (UIManager.TheUI.AreAnyUIsActive()) return;
 
                 DocumentManager.TheManager.OpenDocumentPanel(TargetObject.GetComponent<DocumentScript>());

@@ -5,17 +5,6 @@ using UnityEngine;
 public class Generator : InteractiveObject
 {
 
-   
-
-    public InventoryManager Inventory;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-     
-    }
-
-
     public override void ExecuteInteractiveAction()
     {
 
@@ -25,7 +14,7 @@ public class Generator : InteractiveObject
 
             
 
-            for (int i = 0; i < transform.GetChildCount(); i++)
+            for (int i = 0; i < transform.childCount; i++)
             {
                 transform.GetChild(i).gameObject.SetActive(true);
             }
@@ -33,12 +22,5 @@ public class Generator : InteractiveObject
 
         base.ExecuteInteractiveAction();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
 }
