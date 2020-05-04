@@ -18,9 +18,11 @@ public class Generator : InteractiveObject
             {
                 transform.GetChild(i).gameObject.SetActive(true);
             }
+
+            base.ExecuteInteractiveAction();
         }
 
-        base.ExecuteInteractiveAction();
+        
     }
 
 }
