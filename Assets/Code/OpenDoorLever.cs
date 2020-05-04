@@ -20,6 +20,12 @@ public class OpenDoorLever : MonoBehaviour
     void Update()
     {
         if (Lever1.State && Lever2.State && !Lever3.State)
+        {
             GetComponent<AN_DoorScript>().isOpened = true;
+
+            Rocks.PuzzelManager.spawnRocks();
+
+            this.enabled = false;
+        }
     }
 }

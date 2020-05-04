@@ -45,7 +45,7 @@ public class KeypadUI : MonoBehaviour
         KeypadText.text += Val;
         SFXManager.TheSFXGuy.PlaySFX("Beep");
 
-        if(KeypadText.text.Length == 4)
+        if(KeypadText.text.Length == 11)
         {
             IhaveTyped4 = true;
             StartCoroutine(PassCheckerCoRoutine());
@@ -62,7 +62,6 @@ public class KeypadUI : MonoBehaviour
     public void PassChecker()
     {
         if (
-            (KeypadText.text.Length == 4) &&
             (KeypadText.text == Password)
             )
         {

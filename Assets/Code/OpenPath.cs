@@ -13,14 +13,14 @@ public class OpenPath : InteractiveObject
             InventoryManager.TheInventory.RemoveItem("Blue Flask");
             InventoryManager.TheInventory.RemoveItem("Red Flask");
             InventoryManager.TheInventory.RemoveItem("Green Flask");
-
+            Rocks.PuzzelManager.spawnRocks();
             Explosion.SetActive(true);
 
             transform.parent.gameObject.SetActive(false);
-
+            base.ExecuteInteractiveAction();
         }
 
-        base.ExecuteInteractiveAction();
+        
     }
 
 

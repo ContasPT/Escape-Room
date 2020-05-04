@@ -2,21 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chest2 : InteractiveObject
+public class DragonDoor : InteractiveObject
 {
+
     public bool keypad = false;
 
     public override void ExecuteInteractiveAction()
     {
         if (InventoryManager.TheInventory.HasItem(KeyItem) && keypad)
         {
-            InventoryManager.TheInventory.RemoveItem(KeyItem);
-
-            GetComponent<Animation>().Play();
-
-            GetComponent<BoxCollider>().enabled = false;
-
-            Rocks.PuzzelManager.spawnRocks();
+            GetComponent<AN_DoorScript>().isOpened = true;
+;
             base.ExecuteInteractiveAction();
         }
     }

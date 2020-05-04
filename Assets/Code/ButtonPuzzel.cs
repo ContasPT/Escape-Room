@@ -59,6 +59,7 @@ public class ButtonPuzzel : MonoBehaviour
         {
             transform.GetChild(i).GetComponent<ButtonInter>().tag = "Untagged";
         }
+        Rocks.PuzzelManager.spawnRocks();
         InputButtons.Clear();
         SFXManager.TheSFXGuy.PlaySFX("Success");
     }

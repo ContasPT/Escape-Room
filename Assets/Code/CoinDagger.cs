@@ -11,7 +11,7 @@ public class CoinDagger : InteractiveObject
         {
             InventoryManager.TheInventory.RemoveItem("Knife");
             InventoryManager.TheInventory.RemoveItem("Bronze coin");
-
+            Rocks.PuzzelManager.spawnRocks();
             GetComponent<AN_DoorScript>().isOpened = true;
         }
     }

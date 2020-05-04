@@ -9,6 +9,8 @@ public class Gem : InteractiveObject
 
         if (InventoryManager.TheInventory.HasItem(KeyItem))
         {
+            Rocks.PuzzelManager.spawnRocks();
+
             InventoryManager.TheInventory.RemoveItem(KeyItem);
 
             InventoryManager.TheInventory.AddItem(

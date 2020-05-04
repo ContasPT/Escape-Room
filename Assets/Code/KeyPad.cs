@@ -6,18 +6,16 @@ public class KeyPad : InteractiveObject
 {
     public GameObject KeyPadUI;
     public string Password;
-    public GameObject Chest;
 
-    public void PassKeypad()
+    public virtual void PassKeypad()
     {
-        Chest.GetComponent<Chest2>().keypad = true;
     }
 
     public override void ExecuteInteractiveAction()
     {
-
+        KeyPadUI.GetComponent<KeypadUI>().KeypadText.text = "";
         KeyPadUI.GetComponent<KeypadUI>().Password = Password;
-
+        
         UIManager.TheUI.LockInput(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -29,6 +27,7 @@ public class KeyPad : InteractiveObject
     {
         if (KeyPadUI.activeSelf && KeyPadUI.GetComponent<KeypadUI>().Password == Password && KeyPadUI.GetComponent<KeypadUI>().Pass)
         {
+            KeyPadUI.GetComponent<KeypadUI>().Pass = false;
             PassKeypad();
             print("Pass");
             KeyPadUI.SetActive(false);

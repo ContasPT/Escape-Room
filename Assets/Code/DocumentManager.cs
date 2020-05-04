@@ -19,7 +19,7 @@ public class DocumentManager : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) && DocPanel.activeInHierarchy)
+        if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) && DocPanel.activeSelf)
         {
             CloseDocumentPanel();
         }

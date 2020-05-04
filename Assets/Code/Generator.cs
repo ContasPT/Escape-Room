@@ -12,7 +12,7 @@ public class Generator : InteractiveObject
         {
             InventoryManager.TheInventory.RemoveItem(KeyItem);
 
-            
+            Rocks.PuzzelManager.spawnRocks();
 
             for (int i = 0; i < transform.childCount; i++)
             {
