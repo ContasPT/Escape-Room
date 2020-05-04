@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2506255008423352773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2506255008423352779}
+  - component: {fileID: 2506255008423352778}
+  m_Layer: 0
+  m_Name: SFXMAnager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2506255008423352779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2506255008423352773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 271.8072, y: 211.5721, z: -14.875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2506255008423352778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2506255008423352773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea625bc7b486a294abd12abedc3d479b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SFXNames:
+  - Beep
+  - Success
+  - Fail
+  SFXClips:
+  - {fileID: 8300000, guid: 1a956508150fff84f99693fbfd00464b, type: 3}
+  - {fileID: 8300000, guid: 84d5621f72a18fd48933e375662d3d34, type: 3}
+  - {fileID: 8300000, guid: a19e4b8c96efc45498b33c64707724ef, type: 3}
+  SFXPrefab: {fileID: 7935021311987228827, guid: d320fa4f4dada6d48a70c23a35d5c41f,
+    type: 3}
