@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class UI : MonoBehaviour
@@ -10,6 +11,7 @@ public class UI : MonoBehaviour
     public GameObject ButtonStart;
     public GameObject ButtonResume;
     public GameObject InGame;
+    public Text Sub;
 
     private void Start()
     {
@@ -38,8 +40,7 @@ public class UI : MonoBehaviour
         Menu.SetActive(false);
 
         if (Player.GetComponent<Animation>())
-        {
-            Player.GetComponent<Animation>().Play("PlayerStart");
+        {      
 
           
 
@@ -55,12 +56,25 @@ public class UI : MonoBehaviour
     }
 
     IEnumerator PlayerControl()
-    {      
+    {
+        SFXManager.TheSFXGuy.PlaySFX("Voice1");
+        Sub.text = "They told me I should grab that crystal and get out.";
 
-            yield return new WaitForSeconds(Player.GetComponent<Animation>().GetClip("PlayerStart").length);
+        yield return new WaitForSeconds(4);
+        Sub.text = "";
+
+       Player.GetComponent<Animation>().Play("PlayerStart");
+
+        yield return new WaitForSeconds(Player.GetComponent<Animation>().GetClip("PlayerStart").length);
 
         InGame.SetActive(true);
         Player.GetComponent<FirstPersonController>().enabled = true;
+
+        SFXManager.TheSFXGuy.PlaySFX("Voice2");
+        Sub.text = "Oh no, seems like I am stuck between a rock and a hard place.";
+
+        yield return new WaitForSeconds(4);
+        Sub.text = "";
     }
 
     public void ResumeGame()
