@@ -14,6 +14,8 @@ public class ButtonPuzzel : MonoBehaviour
 
     bool Start = true;
 
+    public GameObject Door;
+
     public enum Buttons
     {
         Blue,
@@ -52,6 +54,11 @@ public class ButtonPuzzel : MonoBehaviour
 
     void Pass()
     {
+        Door.GetComponent<AN_DoorScript>().isOpened = true;
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).GetComponent<ButtonInter>().tag = "Untagged";
+        }
         InputButtons.Clear();
         SFXManager.TheSFXGuy.PlaySFX("Success");
     }
