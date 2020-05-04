@@ -13,7 +13,7 @@ public class KeyPad : InteractiveObject
 
     public override void ExecuteInteractiveAction()
     {
-        KeyPadUI.GetComponent<KeypadUI>().KeypadText.text = "";
+        
         KeyPadUI.GetComponent<KeypadUI>().Password = Password;
         
         UIManager.TheUI.LockInput(false);

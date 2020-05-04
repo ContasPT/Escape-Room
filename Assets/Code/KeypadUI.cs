@@ -14,7 +14,7 @@ public class KeypadUI : MonoBehaviour
     private Color Original;
 
     public Image LED;
-    public bool IhaveTyped4;
+    //public bool IhaveTyped4;
 
     public bool Pass;
 
@@ -39,15 +39,14 @@ public class KeypadUI : MonoBehaviour
 
     public void ClickOnBtn(string Val)
     {
-        if (IhaveTyped4) return;
+        
 
        // if(KeypadText.text=="0000")KeypadText.text = "";
         KeypadText.text += Val;
         SFXManager.TheSFXGuy.PlaySFX("Beep");
 
         if(KeypadText.text.Length == 11)
-        {
-            IhaveTyped4 = true;
+        {            
             StartCoroutine(PassCheckerCoRoutine());
         }
     }
@@ -56,7 +55,7 @@ public class KeypadUI : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         PassChecker();
-        IhaveTyped4 = false;
+        
     }
 
     public void PassChecker()
@@ -67,7 +66,7 @@ public class KeypadUI : MonoBehaviour
         {
             SFXManager.TheSFXGuy.PlaySFX("Success");
             LED.color = Green;
-
+            KeypadText.text = "";
             Pass = true;
             leaveKeypad();
         }

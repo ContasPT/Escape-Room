@@ -13,6 +13,7 @@ public class MineCart : InteractiveObject
     {
         if (InventoryManager.TheInventory.HasItem(KeyItem))
         {
+            InventoryManager.TheInventory.RemoveItem(KeyItem);
             Rocks.PuzzelManager.spawnRocks();
             GetComponent<Animation>().Play();
 

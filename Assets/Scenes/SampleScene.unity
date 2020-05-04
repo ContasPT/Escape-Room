@@ -43838,6 +43838,11 @@ PrefabInstance:
       propertyPath: isOpened
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5845587398265535077, guid: 07dd0ed6acb5c5140a213008cf7b2a1d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07dd0ed6acb5c5140a213008cf7b2a1d, type: 3}
 --- !u!1 &1664622857 stripped
@@ -43860,7 +43865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tooltip: To open
   CanBeInteractedWith: 1
-  KeyItem: 
+  KeyItem: Dragon statue
   keypad: 0
 --- !u!1001 &1667216632
 PrefabInstance:
