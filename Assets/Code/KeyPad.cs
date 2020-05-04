@@ -6,10 +6,11 @@ public class KeyPad : InteractiveObject
 {
     public GameObject KeyPadUI;
     public string Password;
+    public GameObject Chest;
 
-    public virtual void PassKeypad()
+    public void PassKeypad()
     {
-
+        Chest.GetComponent<Chest2>().keypad = true;
     }
 
     public override void ExecuteInteractiveAction()
