@@ -2944,7 +2944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Red Flask
-    Description: BOOM ingredient
+    Description: This Ingredient is Used to make Explosions
     Image: {fileID: 21300000, guid: 081d2172286eb464ea87c2f3d40b7226, type: 3}
 --- !u!1001 &139311779
 PrefabInstance:
@@ -4190,7 +4190,7 @@ PrefabInstance:
     - target: {fileID: 8385242052075323531, guid: dfa07040f3b61f648bc8ad1291f6cbdb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.448
+      value: 55.284
       objectReference: {fileID: 0}
     - target: {fileID: 8385242052075323531, guid: dfa07040f3b61f648bc8ad1291f6cbdb,
         type: 3}
@@ -4200,7 +4200,7 @@ PrefabInstance:
     - target: {fileID: 8385242052075323531, guid: dfa07040f3b61f648bc8ad1291f6cbdb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.969
+      value: 21.948
       objectReference: {fileID: 0}
     - target: {fileID: 8385242052075323531, guid: dfa07040f3b61f648bc8ad1291f6cbdb,
         type: 3}
@@ -10153,7 +10153,7 @@ PrefabInstance:
     - target: {fileID: 5575272835648422380, guid: 741afadbc8ee8d6498f2ac5ed155cefb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.585
+      value: 27.439
       objectReference: {fileID: 0}
     - target: {fileID: 5575272835648422380, guid: 741afadbc8ee8d6498f2ac5ed155cefb,
         type: 3}
@@ -10309,7 +10309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Gold coin
-    Description: A gold coin
+    Description: A Golden Coin
     Image: {fileID: 21300000, guid: b0ef518bf3bcfe74f8b05b4ac00af695, type: 3}
 --- !u!65 &379935986
 BoxCollider:
@@ -18360,7 +18360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8854f05233c2fc14492a80a889c295e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DocSprite: {fileID: 21300000, guid: 0ead577b762091c4ab51e037a1d2ba83, type: 3}
+  DocSprite: {fileID: 21300000, guid: 64cfa51d644ddda4b92c0e1d5e9c8692, type: 3}
 --- !u!64 &672603416
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18392,7 +18392,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fc07b68a7aa437d47a60ddfde0de63e2, type: 2}
+  - {fileID: 2100000, guid: 0dd016691f066e1449d7d2fb729db39a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20013,7 +20013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Gasoline
-    Description: Used to turn engines on
+    Description: Used to Turn Engines On
     Image: {fileID: 21300000, guid: 98d1fcfcdc013dc46a9c83bc407b6db1, type: 3}
 --- !u!65 &729010827
 BoxCollider:
@@ -25121,7 +25121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: PickAxe
-    Description: Can be used to pick up minerals
+    Description: Used to Mine Crystals
     Image: {fileID: 21300000, guid: 55f2b9340ceca0f49837f4583b9a0f26, type: 3}
 --- !u!65 &895590007
 BoxCollider:
@@ -27502,7 +27502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Dragon statue
-    Description: A dragon statue
+    Description: Golden Dragon Statue
     Image: {fileID: 21300000, guid: 8fd18096a689c6249a31f2badde1dd5f, type: 3}
 --- !u!1001 &961646666
 PrefabInstance:
@@ -27733,7 +27733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Knife
-    Description: A knife
+    Description: A Knife
     Image: {fileID: 21300000, guid: a6444cc0ec05bc342b676bbe22f957a9, type: 3}
 --- !u!1001 &967252624
 PrefabInstance:
@@ -31775,7 +31775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Chest Key
-    Description: Used to open chests
+    Description: Used to Open Chests
     Image: {fileID: 21300000, guid: 7389f3acae6728546ae65c682b49e408, type: 3}
 --- !u!65 &1100441592
 BoxCollider:
@@ -40038,7 +40038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Chest Key
-    Description: Used to open chests
+    Description: Used to Open Chests
     Image: {fileID: 21300000, guid: 7389f3acae6728546ae65c682b49e408, type: 3}
 --- !u!136 &1390122793
 CapsuleCollider:
@@ -42482,7 +42482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Green Flask
-    Description: BOOM ingredient
+    Description: This Ingredient is Used to make Explosions
     Image: {fileID: 21300000, guid: 2e2f0880ccc6573408acfe83a03330de, type: 3}
 --- !u!1001 &1455839833
 PrefabInstance:
@@ -45124,7 +45124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Blue Flask
-    Description: BOOM ingredient
+    Description: This Ingredient is Used to make Explosions
     Image: {fileID: 21300000, guid: f50fe8e1000ed7f4182d5eabeda4f29f, type: 3}
 --- !u!136 &1543433676
 CapsuleCollider:
@@ -45526,6 +45526,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f95ea3f4f5c3378459f5f4c7110f5805, type: 3}
+--- !u!1001 &1567043032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1853534574060320, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_Name
+      value: Latern (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 65.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.318
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.033413
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69565034
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7183806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_RootOrder
+      value: 858
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.158005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453513966746856, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd6ccd0946bd7e74c84b8e50127efaf9, type: 3}
 --- !u!1001 &1567693743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47698,7 +47755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4826482260062094, guid: 45775b024fd64674bab6655bde5115ef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 97.08
+      value: 97.105
       objectReference: {fileID: 0}
     - target: {fileID: 4826482260062094, guid: 45775b024fd64674bab6655bde5115ef, type: 3}
       propertyPath: m_LocalPosition.y
@@ -47706,7 +47763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4826482260062094, guid: 45775b024fd64674bab6655bde5115ef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.457
+      value: 23.726
       objectReference: {fileID: 0}
     - target: {fileID: 4826482260062094, guid: 45775b024fd64674bab6655bde5115ef, type: 3}
       propertyPath: m_LocalRotation.x
@@ -47836,7 +47893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Wrench
-    Description: A Wrench
+    Description: Used to Fix Stuff
     Image: {fileID: 21300000, guid: 8a1b0b3bf0ec19e48a64ccce40e34a8a, type: 3}
 --- !u!1001 &1658581168
 PrefabInstance:
@@ -51728,7 +51785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssociatedItem:
     Name: Bronze coin
-    Description: A broze coin
+    Description: A Bronze Coin
     Image: {fileID: 21300000, guid: 0ab98536f52012c44a0c547a02c744f0, type: 3}
 --- !u!65 &1766956885
 BoxCollider:
@@ -59249,7 +59306,7 @@ PrefabInstance:
     - target: {fileID: 6482677549232728849, guid: dd46835ba98bdda46807dfc0f3f9c889,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.338
+      value: 47.761
       objectReference: {fileID: 0}
     - target: {fileID: 6482677549232728849, guid: dd46835ba98bdda46807dfc0f3f9c889,
         type: 3}
@@ -59259,7 +59316,7 @@ PrefabInstance:
     - target: {fileID: 6482677549232728849, guid: dd46835ba98bdda46807dfc0f3f9c889,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.427
+      value: 27.714
       objectReference: {fileID: 0}
     - target: {fileID: 6482677549232728849, guid: dd46835ba98bdda46807dfc0f3f9c889,
         type: 3}
