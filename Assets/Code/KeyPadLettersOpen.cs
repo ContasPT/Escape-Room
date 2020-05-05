@@ -29,6 +29,7 @@ public class KeyPadLettersOpen : InteractiveObject
     {
         if (KeyPadUI.activeSelf && KeyPadUI.GetComponent<LettersKeyPadUI>().Password == Password && KeyPadUI.GetComponent<LettersKeyPadUI>().Pass)
         {
+            print("KeypadLetter enable");
             PassKeypad();
             print("Pass");
             KeyPadUI.SetActive(false);

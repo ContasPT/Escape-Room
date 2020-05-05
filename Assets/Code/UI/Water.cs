@@ -20,14 +20,12 @@ public class Water : MonoBehaviour
 
     IEnumerator teleport(Collider other)
     {
+        
         // suspend execution for 5 seconds
         other.GetComponent<FirstPersonController>().enabled = false;
         other.transform.position = Pos.transform.position;
         yield return new WaitForSeconds(0.25f);
-        while (other.transform.position != Pos.transform.position)
-        {
-            
-        }
+
         other.GetComponent<FirstPersonController>().enabled = true;
     }
 }

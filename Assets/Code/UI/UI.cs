@@ -42,14 +42,13 @@ public class UI : MonoBehaviour
         if (Player.GetComponent<Animation>())
         {      
 
-          
-
-            StartCoroutine(PlayerControl());
+          StartCoroutine(PlayerControl());
         }
         else
         {
             InGame.SetActive(true);
             Player.GetComponent<FirstPersonController>().enabled = true;
+
         }
 
 
@@ -68,8 +67,8 @@ public class UI : MonoBehaviour
         yield return new WaitForSeconds(Player.GetComponent<Animation>().GetClip("PlayerStart").length);
 
         InGame.SetActive(true);
-        Player.GetComponent<FirstPersonController>().enabled = true;
-
+        //Player.GetComponent<FirstPersonController>().enabled = true;
+        UIManager.TheUI.LockInput(true);
         SFXManager.TheSFXGuy.PlaySFX("Voice2");
         Sub.text = "Oh no, seems like I am stuck between a rock and a hard place.";
 

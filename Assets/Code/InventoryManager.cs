@@ -53,7 +53,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Tab))
+        if(Input.GetKeyDown(KeyCode.Tab) && InventoryPanel.transform.parent.gameObject.activeSelf)
         {
             // Open the inventory if its not active
             if (!InventoryPanel.activeInHierarchy)

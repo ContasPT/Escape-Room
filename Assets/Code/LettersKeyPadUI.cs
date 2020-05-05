@@ -59,7 +59,7 @@ public class LettersKeyPadUI : MonoBehaviour
 
     public void leaveKeypad()
     {
-        print("1");
+        
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         UIManager.TheUI.LockInput(true);
