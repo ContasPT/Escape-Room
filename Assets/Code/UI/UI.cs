@@ -21,7 +21,7 @@ public class UI : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) && !Cursor.visible)
         {
             InGame.SetActive(false);
             Menu.SetActive(true);
